@@ -1,11 +1,6 @@
 #!/bin/bash
 set -e
 
-echo "===== ГЕНЕРАЦИЯ КЛЮЧЕЙ ====="
-/usr/local/xray/xray x25519
-echo "UUID: $(/usr/local/xray/xray uuid)"
-echo "===== КОНЕЦ ГЕНЕРАЦИИ ====="
-
 # ... дальше весь остальной скрипт как был
 cat > /usr/local/xray/config.json <<EOF
 {
